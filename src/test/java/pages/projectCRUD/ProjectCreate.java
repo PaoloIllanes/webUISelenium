@@ -14,6 +14,5 @@ public class ProjectCreate {
     public Button addProj = new Button(By.xpath("//td[text()='Add New Project']"));
     public TextBox nameProject =  new TextBox(By.id("NewProjNameInput"));
     public TextBox nameProjectButton =  new TextBox(By.id("NewProjNameButton"));
-    public Button project = new Button((By.xpath("//li[last()]//td[text()='"+projName+"']")));
 
 }

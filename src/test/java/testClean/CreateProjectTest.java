@@ -12,7 +12,7 @@ public class CreateProjectTest extends BaseTodoLy{
     MainPage mainPage= new MainPage();
     LoginModal loginModal= new LoginModal();
     MenuSection menuSection = new MenuSection();
-    ProjectCreate projectCreate = new ProjectCreate("UITest");
+    ProjectCreate projectCreate = new ProjectCreate("UI");
 
     @Test
     public void verifyCreateTodoLy(){
