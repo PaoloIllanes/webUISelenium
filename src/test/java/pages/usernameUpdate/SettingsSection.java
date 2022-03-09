@@ -4,9 +4,9 @@ import control.Button;
 import control.TextBox;
 import org.openqa.selenium.By;
 
-public class UserUpdate {
+public class SettingsSection {
 
-    public UserUpdate(String newUserName){
+    public SettingsSection(String newUserName){
         this.newUserName=newUserName;
 
     }

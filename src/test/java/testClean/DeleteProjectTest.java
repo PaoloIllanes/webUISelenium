@@ -38,14 +38,16 @@ public class DeleteProjectTest extends BaseTodoLy{
         projectUpdate.editSubmit.click();
         Thread.sleep(2000);
 
-        Assertions.assertEquals(projectUpdate.newProjName,menuSection.currentProject.getTextControl());
+        Assertions.assertEquals(projectUpdate.newProjName,menuSection.currentProject.getTextControl(),
+                "El nombre del proyecto no se actualizo");
 
         projectDelete.getProject.click();
         projectDelete.projectSubMenu.click();
         projectDelete.projectSubMenuDelete.click();
         Session.getInstance().getDriver().switchTo().alert().accept();
         Thread.sleep(2000);
-        Assertions.assertTrue(!projectUpdate.newProjName.equals(menuSection.currentProject.getTextControl()));
+        Assertions.assertTrue(!projectUpdate.newProjName.equals(menuSection.currentProject.getTextControl()),
+                "No elimino el proyecto");
 
 
 

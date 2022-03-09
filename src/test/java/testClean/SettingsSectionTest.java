@@ -4,13 +4,13 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import pages.LoginModal;
 import pages.MainPage;
-import pages.usernameUpdate.UserUpdate;
+import pages.usernameUpdate.SettingsSection;
 
-public class UserUpdateTest extends BaseTodoLy {
+public class SettingsSectionTest extends BaseTodoLy {
 
     MainPage mainPage= new MainPage();
     LoginModal loginModal= new LoginModal();
-    UserUpdate userUpdate = new UserUpdate("NewUser");
+    SettingsSection settingsSection = new SettingsSection("NewUser");
 
 
 
@@ -21,13 +21,13 @@ public class UserUpdateTest extends BaseTodoLy {
         loginModal.pwdTxtBox.setText("123");
         loginModal.loginButton.click();
         Thread.sleep(2000);
-        userUpdate.settingsButton.click();
-        userUpdate.fullnameInput.clearSetText(userUpdate.newUserName);
-        userUpdate.okButton.click();
+        settingsSection.settingsButton.click();
+        settingsSection.fullnameInput.clearSetText(settingsSection.newUserName);
+        settingsSection.okButton.click();
         Thread.sleep(2000);
-        userUpdate.settingsButton.click();
+        settingsSection.settingsButton.click();
         Thread.sleep(2000);
-        Assertions.assertTrue(userUpdate.newUserName.equals(userUpdate.fullnameInput.getTextAttributeControl("value")));
+        Assertions.assertTrue(settingsSection.newUserName.equals(settingsSection.fullnameInput.getTextAttributeControl("value")));
 
 
 

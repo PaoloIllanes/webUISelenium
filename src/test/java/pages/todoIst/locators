@@ -1,0 +1,13 @@
+MainPage
+login button
+//ul[@class='_2Evbo']//a[text()='Log in']
+Loginpage
+email textbox
+//div[@class='field']//input[@id='email']
+pwd textbox
+//div[@class='field']//input[@id='password']
+button inicia sesion
+//button[text()='Inicia sesión']
+Main menu todoist
+texto Proyectos
+//span[text()='Proyectos']
